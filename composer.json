@@ -8,6 +8,12 @@
             "email": "bell@zoontao.cn"
         }
     ],
-    "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "php": "^7.1.8 || ^8.0",
+        "ext-json": "*"
+    },
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "^5.3"
+    }
 }
