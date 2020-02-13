@@ -1,0 +1,13 @@
+{
+    "name": "zoontao/wechat",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "bell",
+            "email": "bell@zoontao.cn"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
