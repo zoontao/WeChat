@@ -15,7 +15,7 @@
     },
     "require-dev": {
 
-    },d
+    },
     "autoload": {
         "psr-4": {
             "ZoonTao\\WeChat\\": "src/"
