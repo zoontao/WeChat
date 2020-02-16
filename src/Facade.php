@@ -27,7 +27,7 @@ class Facade extends LaravelFacade
      */
     public static function getFacadeAccessor()
     {
-        return 'wechat.official_account';
+        return 'wechat.official_account ';
     }
 
 //    /**
