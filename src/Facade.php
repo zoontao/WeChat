@@ -19,17 +19,17 @@ use Illuminate\Support\Facades\Facade as LaravelFacade;
  * @author Bell <bell@zoontao.com>
  */
 class Facade extends LaravelFacade
-{ 
-//    /**
-//     * 默认为 Server.
-//     *
-//     * @return string
-//     */
-//    public static function getFacadeAccessor()
-//    {
-//        return 'wechat.official_account';
-//    }
-//
+{
+    /**
+     * 默认为 Server.
+     *
+     * @return string
+     */
+    public static function getFacadeAccessor()
+    {
+        return 'wechat.official_account';
+    }
+
 //    /**
 //     * @return \EasyWeChat\OfficialAccount\Application
 //     */
