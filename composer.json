@@ -1,19 +1,17 @@
 {
     "name": "zoontao/wechat",
+    "description": "WeChat API SDK for Lavarel",
     "type": "library",
+    "require": {
+        "illuminate/container": "^7.0@dev",
+        "phpunit/phpunit": "^9.1@dev"
+    },
     "license": "MIT",
     "authors": [
         {
-            "name": "bell",
-            "email": "bell@zoontao.cn"
+            "name": "Bell",
+            "email": "bell@zoontao.com"
         }
     ],
-    "require": {
-        "php": "^7.1.8 || ^8.0",
-        "ext-json": "*"
-    },
-    "minimum-stability": "dev",
-    "require-dev": {
-        "phpunit/phpunit": "^5.3"
-    }
+    "minimum-stability": "dev"
 }
