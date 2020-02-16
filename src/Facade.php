@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Facade as LaravelFacade;
  * @author Bell <bell@zoontao.com>
  */
 class Facade extends LaravelFacade
-{
+{ 
 //    /**
 //     * 默认为 Server.
 //     *
