@@ -3,8 +3,8 @@
     "description": "WeChat API SDK for Lavarel",
     "type": "library",
     "require": {
-        "illuminate/container": "^7.0@dev",
-        "phpunit/phpunit": "^9.1@dev"
+        "php": "^7.2",
+        "laravel/framework": "^6.2"
     },
     "license": "MIT",
     "authors": [
