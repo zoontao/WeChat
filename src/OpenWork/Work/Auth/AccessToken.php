@@ -1,0 +1,76 @@
+<?php
+
+/*
+ * This file is part of the overtrue/wechat.
+
+ */
+
+namespace WeChat\OpenWork\Work\Auth;
+
+use WeChat\Kernel\AccessToken as BaseAccessToken;
+use WeChat\OpenWork\Application;
+use Pimple\Container;
+
+/**
+ * AccessToken.
+ *
+ * @author xiaomin <keacefull@gmail.com>
+ */
+class AccessToken extends BaseAccessToken
+{
+    /**
+     * @var string
+     */
+    protected $requestMethod = 'POST';
+
+    /**
+     * @var string 授权方企业ID
+     */
+    protected $authCorpid;
+
+    /**
+     * @var string 授权方企业永久授权码，通过get_permanent_code获取
+     */
+    protected $permanentCode;
+
+    protected $component;
+
+    /**
+     * AccessToken constructor.
+     *
+     * @param Container   $app
+     * @param string      $authCorpId
+     * @param string      $permanentCode
+     * @param Application $component
+     */
+    public function __construct(Container $app, string $authCorpId, string $permanentCode, Application $component)
+    {
+        $this->authCorpid = $authCorpId;
+        $this->permanentCode = $permanentCode;
+        $this->component = $component;
+        parent::__construct($app);
+    }
+
+    /**
+     * Credential for get token.
+     *
+     * @return array
+     */
+    protected function getCredentials(): array
+    {
+        return [
+            'auth_corpid' => $this->authCorpid,
+            'permanent_code' => $this->permanentCode,
+        ];
+    }
+
+    /**
+     * @return string
+     */
+    public function getEndpoint(): string
+    {
+        return 'cgi-bin/service/get_corp_token?'.http_build_query([
+                'suite_access_token' => $this->component['suite_access_token']->getToken()['suite_access_token'],
+            ]);
+    }
+}
