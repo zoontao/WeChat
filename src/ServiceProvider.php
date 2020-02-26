@@ -17,9 +17,10 @@ namespace ZoonTao\WeChat;
 //use EasyWeChat\OpenWork\Application as OpenWork;
 //use EasyWeChat\Payment\Application as Payment;
 //use EasyWeChat\Work\Application as Work;
+use Laravel\Lumen\Application as LumenApplication;
 use Illuminate\Foundation\Application as LaravelApplication;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
-//use Laravel\Lumen\Application as LumenApplication;
+
 
 /**
  * Class ServiceProvider.
