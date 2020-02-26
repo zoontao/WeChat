@@ -88,7 +88,7 @@ class Client extends BaseClient
      */
     public function getTicket(bool $refresh = false, string $type = 'jsapi'): array
     {
-        $cacheKey = sprintf('easywechat.basic_service.jssdk.ticket.%s.%s', $type, $this->getAppId());
+        $cacheKey = sprintf('wechat.basic_service.jssdk.ticket.%s.%s', $type, $this->getAppId());
 
         if (!$refresh && $this->getCache()->has($cacheKey)) {
             return $this->getCache()->get($cacheKey);
