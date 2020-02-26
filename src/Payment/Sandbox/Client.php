@@ -51,6 +51,6 @@ class Client extends BaseClient
      */
     protected function getCacheKey(): string
     {
-        return 'easywechat.payment.sandbox.'.md5($this->app['config']->app_id.$this->app['config']['mch_id']);
+        return 'wechat.payment.sandbox.'.md5($this->app['config']->app_id.$this->app['config']['mch_id']);
     }
 }

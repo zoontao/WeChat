@@ -95,10 +95,10 @@ class ServiceProvider extends LaravelServiceProvider
                 });
             }
             $this->app->alias("wechat.{$name}.default", 'wechat.'.$name);
-            $this->app->alias("wechat.{$name}.default", 'easywechat.'.$name);
+            $this->app->alias("wechat.{$name}.default", 'wechat.'.$name);
 
             $this->app->alias('wechat.'.$name, $class);
-            $this->app->alias('easywechat.'.$name, $class);
+            $this->app->alias('wechat.'.$name, $class);
         }
     }
 

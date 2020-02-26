@@ -76,6 +76,6 @@ class SuiteTicket
      */
     protected function getCacheKey(): string
     {
-        return 'easywechat.open_work.suite_ticket.'.$this->app['config']['suite_id'];
+        return 'wechat.open_work.suite_ticket.'.$this->app['config']['suite_id'];
     }
 }

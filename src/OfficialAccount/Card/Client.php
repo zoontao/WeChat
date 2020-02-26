@@ -36,7 +36,7 @@ class Client extends BaseClient
      *
      * @var string
      */
-    protected $ticketCachePrefix = 'easywechat.official_account.card.api_ticket.';
+    protected $ticketCachePrefix = 'wechat.official_account.card.api_ticket.';
 
     /**
      * 获取卡券颜色.

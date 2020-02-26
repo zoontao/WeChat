@@ -56,13 +56,13 @@ class Application extends ServiceContainer
                 // 测试环境
                 'dev' => [
                     'driver' => 'single',
-                    'path' => '/tmp/easywechat.log',
+                    'path' => '/tmp/wechat.log',
                     'level' => 'debug',
                 ],
                 // 生产环境
                 'prod' => [
                     'driver' => 'daily',
-                    'path' => '/tmp/easywechat.log',
+                    'path' => '/tmp/wechat.log',
                     'level' => 'info',
                 ],
             ],

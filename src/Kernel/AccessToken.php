@@ -59,7 +59,7 @@ abstract class AccessToken implements AccessTokenInterface
     /**
      * @var string
      */
-    protected $cachePrefix = 'easywechat.kernel.access_token.';
+    protected $cachePrefix = 'wechat.kernel.access_token.';
 
     /**
      * AccessToken constructor.
